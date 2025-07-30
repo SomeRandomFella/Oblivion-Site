@@ -2,7 +2,7 @@ const header = document.querySelector("header");
 
 header.innerHTML = `
   <div class="left">
-        <img class="icon" src="../images/icon.ico" alt="icon" />
+        <img class="icon" src="./images/icon.ico" alt="icon" />
         <a href="/Oblivion-Site">
           <h1>Oblivon</h1>
         </a>
