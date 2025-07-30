@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  background-color: rgb(10, 10, 10);
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+.icon {
+  filter: brightness(0) invert();
+  width: 50px;
+  height: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid rgb(43, 43, 43);
+}
+
+.feat2 {
+  background-color: transparent;
+  color: white;
+  font-family: "Inter", sans-serif;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.4s, color 0.4s;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.left h1 {
+  font-size: 34px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oblivon</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/shared.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/icon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="cool">
+        <h1>Oblivon</h1>
+        <p>The best open-sourced <br />free webhook sender out there!</p>
+        <button class="feat">Features</button>
+        <a href="version/oblivon.exe" class="disc" download> Download </a>
+      </div>
+      <div class="gui">
+        <img class="menu" src="images/gui.png" alt="gui" />
+      </div>
+    </main>
+
+    <div class="use">
+      <div class="heady">
+        <h1>Frequently asked questions</h1>
+      </div>
+      <div class="questiony">
+        <details>
+          <summary>Q: How do I import/export webhooks?</summary>
+          <p>
+            Use the Add Shard Group feature in Settings to import. Export by
+            copying from webhooks.json.
+          </p>
+        </details>
+        <details>
+          <summary>Q: How do I add a new theme?</summary>
+          <p>
+            Edit themes.json and restart the app, or use the Custom theme option
+            in Preferences.
+          </p>
+        </details>
+        <details>
+          <summary>Q: What are Parallel and Sequential modes?</summary>
+          <p>
+            Parallel sends pings to multiple shards at once. Sequential sends to
+            one shard at a time and automatically switches to the next when
+            done.
+          </p>
+        </details>
+        <p>
+          Still need help? Join
+          <a href="https://discord.com/invite/jwkgZu3KJ6" id="rizzz"
+            >The Discord</a
+          >
+        </p>
+      </div>
+      <div class="gif">
+        <img
+          src="https://media.tenor.com/Ijfj4Z-4a5QAAAAC/discord-ping.gif"
+          alt="Discord Ping GIF"
+        />
+      </div>
+    </div>
+
+    <div class="revs">
+      <h1>Great testimonials!</h1>
+      <div class="reviews">
+        <div class="review">
+          <div class="name">
+            <img class="pfp" src="images/plankton.png" alt="user pfp" />
+            <div class="inf">
+              <h2>Sexyplankton</h2>
+              <p class="star">⭐⭐⭐⭐⭐</p>
+            </div>
+          </div>
+          <p>
+            "Oblivion is one of the best webhook senders ive ever used and it
+            has helped me a lot as a devolper since its open source!"
+          </p>
+        </div>
+        <div class="review">
+          <div class="name">
+            <img
+              class="pfp"
+              src="https://cdn.discordapp.com/avatars/1199786685249093662/dc28f934dc5235de141cebd31f5bf8df.webp?size=80"
+              alt="user pfp"
+            />
+            <div class="inf">
+              <h2>Noah</h2>
+              <p class="star">⭐⭐⭐⭐</p>
+            </div>
+          </div>
+          <p>"cuz the pings are good but it makes my phone lag"</p>
+        </div>
+        <div class="review">
+          <div class="name">
+            <img
+              class="pfp"
+              src="https://cdn.discordapp.com/avatars/1378794128996958378/3c5cc5e8da135e355fec63b462527a23.webp?size=128"
+              alt="user pfp"
+            />
+            <div class="inf">
+              <h2>Gojo|40+</h2>
+              <p class="star">⭐⭐⭐⭐⭐</p>
+            </div>
+          </div>
+          <p>"Its great i got 1.8M pings super fast"</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <button class="github">
+        <img class="git" src="images/github.svg" alt="github" />
+      </button>
+    </footer>
+    <script>
+      const image = document.querySelector(".menu");
+      const githubButton = document.querySelector(".github");
+      const feature = document.querySelector(".feat");
+
+      feature.addEventListener("click", () => {
+        window.location.href = "/features";
+      });
+
+      githubButton.addEventListener("click", () => {
+        window.open("https://github.com/sewaeth/oblivion", "_blank");
+      });
+
+      image.addEventListener("mousemove", (e) => {
+        const rect = image.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+
+        const offsetX = x - centerX;
+        const offsetY = y - centerY;
+
+        const rotateX = -offsetY / 10;
+
+        const rotateY = -offsetX / 10;
+
+        image.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+      });
+
+      image.addEventListener("mouseleave", () => {
+        image.style.transform = "rotateX(0deg) rotateY(0deg)";
+      });
+    </script>
+    <script src="javascript/gen.js"></script>
+  </body>
+</html>
