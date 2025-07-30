@@ -14,6 +14,21 @@
       rel="stylesheet"
     />
     <link rel="icon" href="images/icon.ico" type="image/x-icon" />
+
+    <meta property="og:title" content="Oblivon - Open Source Webhook Sender" />
+    <meta
+      property="og:description"
+      content="A free and powerful webhook GUI tool"
+    />
+    <meta
+      property="og:image"
+      content="	https://somerandomfella.github.io/Oblivion-Site/icon.ico"
+    />
+    <meta
+      property="og:url"
+      content="https://somerandomfella.github.io/Oblivion-Site/"
+    />
+    <meta property="og:type" content="website" />
   </head>
   <body>
     <header></header>
@@ -22,8 +37,7 @@
         <h1>Oblivon</h1>
         <p>The best open-sourced <br />free webhook sender out there!</p>
         <button class="feat">Features</button>
-        <a href="https://github.com/sewaeth/oblivion/releases/latest/download/Oblivion.exe
-" class="disc" download> Download </a>
+        <a href="version/oblivon.exe" class="disc" download> Download </a>
       </div>
       <div class="gui">
         <img class="menu" src="images/gui.png" alt="gui" />
@@ -130,7 +144,7 @@
       const feature = document.querySelector(".feat");
 
       feature.addEventListener("click", () => {
-        window.location.href = "/Oblivion-Site/features/";
+        window.location.href = "/features";
       });
 
       githubButton.addEventListener("click", () => {
