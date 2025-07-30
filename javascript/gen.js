@@ -8,7 +8,7 @@ header.innerHTML = `
         </a>
       </div>
       <div class="right">
-        <button class="feat2" onclick="window.location.href = '/features'">
+        <button class="feat2" onclick="window.location.href = '/Oblivion-Site/features'">
           Features
         </button>
       </div>
